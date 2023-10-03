@@ -1,6 +1,6 @@
 class Markdot < Formula
   desc 'Markdown driven dotfiles.'
-  version '0.0.2'
+  version '0.0.3'
   homepage 'https://github.com/shotanue/markdot'
 
   on_macos do
