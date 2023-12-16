@@ -5,19 +5,19 @@ class Md2hype < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/shotanue/md2hype/releases/download/0.0.1/md2hype-darwin-arm64'
-      sha256 '4b2809ebe914e9ad21fc81ac87e1c8843c406e63f3d219344a2736449560a67b'
+      url 'https://github.com/shotanue/md2hype/releases/download/0.0.2/md2hype-darwin-arm64'
+      sha256 'a36f8570a6c7e00cc7db05ec8f7ff0440e7939d7c393388da0287782d127c912'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/shotanue/md2hype/releases/download/0.0.1/md2hype-darwin-amd64'
-      sha256 '904d024ca5a125659fed63cc00498b3eec16dc1419cf3bf4bf1ba59f8a0151d0'
+      url 'https://github.com/shotanue/md2hype/releases/download/0.0.2/md2hype-darwin-amd64'
+      sha256 'c9cede3cab6e7195abef0507b283a72d544d114841aaa37ec167b7cd59a3897b'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/shotanue/md2hype/releases/download/0.0.1/md2hype-linux-amd64'
-      sha256 'f88a1cf9359f8950b1d5da0aa0856dfac8d31e597a448460086a832919282d42'
+      url 'https://github.com/shotanue/md2hype/releases/download/0.0.2/md2hype-linux-amd64'
+      sha256 '616ba4f5e1ccb776ec4f1e250c32d125c9cb4e752195c622c7cca0f106c06c6e'
     end
   end
 
