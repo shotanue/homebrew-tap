@@ -1,4 +1,4 @@
-class Markdot < Formula
+class Md2Hype < Formula
   desc 'A text converter from markdown to html, using unified.js and Bun.'
   version '0.0.1'
   homepage 'https://github.com/shotanue/md2hype'
