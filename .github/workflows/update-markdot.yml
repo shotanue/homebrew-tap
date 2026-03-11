@@ -3,6 +3,9 @@ name: Update markdot
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-24.04
@@ -46,7 +49,7 @@ jobs:
           SHA_DARWIN_ARM64: ${{ steps.sha.outputs.darwin_arm64 }}
           SHA_LINUX_AMD64: ${{ steps.sha.outputs.linux_amd64 }}
         run: |
-          cat > Formula/markdot.rb << RUBY
+          cat > Formula/markdot.rb <<RUBY
           class Markdot < Formula
             desc 'Markdown driven dotfiles.'
             version '${VERSION}'
