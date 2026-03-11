@@ -1,19 +1,23 @@
 class Markdot < Formula
   desc 'Markdown driven dotfiles.'
-  version '0.0.12'
+  version '0.0.13'
   homepage 'https://github.com/shotanue/markdot'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/shotanue/markdot/releases/download/0.0.12/markdot-darwin-arm64'
-      sha256 '69cd6eb9a3bfb3f43f4fef6575578400ddefd84874a66c59239f54333564e210'
+      url 'https://github.com/shotanue/markdot/releases/download/0.0.13/markdot-darwin-arm64'
+      sha256 '40a04a2160496675555ccac291d213739823d536617777ddf9631f3069f9dd8c'
+    end
+    if Hardware::CPU.intel?
+      url 'https://github.com/shotanue/markdot/releases/download/0.0.13/markdot-darwin-amd64'
+      sha256 '8b8d1d4f7a8cf1fdccb0acb474975c28b70071cba9e3d2cdcc1cf8acb369e053'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/shotanue/markdot/releases/download/0.0.12/markdot-linux-amd64'
-      sha256 '6c469ffcc2363e2640c7a93c838aaf635e27e50685ffb2c0eb72da61cfbe4c40'
+      url 'https://github.com/shotanue/markdot/releases/download/0.0.13/markdot-linux-amd64'
+      sha256 'abefe4299f496ba2511500ee718c7924d5efd2d37de464a640a1a546940fc907'
     end
   end
 
